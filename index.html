@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -16,6 +16,10 @@
           <img src="svg/noemi-logo.svg" alt="" class="header-logo">
         </a>
         <nav class="menu">
+
+          <button class="menu-button">
+            <span class="menu-button-label">открыть меню</span>
+          </button>
           <ul class="menu-list">
             <li class="menu-list-item">
               <a class="menu-link" href="#0">Главная</a>
@@ -39,6 +43,9 @@
         </nav>
       </div>
       <div class="title">
+        <a href="#0">
+          <img src="svg/noemi-logo.svg" alt="" class="header-logo-mobile">
+        </a>
         <h1 class="text">Блог о творчестве, спорте, и образе жизни</h1>
       </div>
     </div>
@@ -57,7 +64,7 @@
               <a class="content-menu-link" href="#0">Interior</a>
             </li>
           </ul>
-          <a href="#0#">
+          <a href="#0">
             <h3 class="title-content-item-text intrend-text">Сейчас в тренде: сад на подоконнике</h3>
           </a>
         </div>
@@ -69,7 +76,7 @@
               <a class="content-menu-link" href="#0">Food</a>
             </li>
           </ul>
-          <a href="#0#">
+          <a href="#0">
             <h3 class="title-content-item-text intrend-text">Сыры на красивых картинках из интернета: какие они на вкус?
             </h3>
           </a>
@@ -85,7 +92,7 @@
               <a class="content-menu-link" href="#0">Travel</a>
             </li>
           </ul>
-          <a href="#0#">
+          <a href="#0">
             <h3 class="title-content-item-text intrend-text">Собираемся в первый поход в горы</h3>
           </a>
         </div>
@@ -100,7 +107,7 @@
               <a class="content-menu-link" href="#0">Health</a>
             </li>
           </ul>
-          <a href="#0#">
+          <a href="#0">
             <h3 class="title-content-item-text intrend-text">Сейчас в тренде: сколько витамина C в лимонах?</h3>
           </a>
         </div>
@@ -122,7 +129,7 @@
                 <a class="content-menu-link" href="#0">Health</a>
               </li>
             </ul>
-            <a href="#0#">
+            <a href="#0">
               <h3 class="title-content-item-text">10 мест, ради которых стоит
                 проснуться на рассвете</h3>
             </a>
@@ -147,7 +154,7 @@
                 <a class="content-menu-link" href="#0">Lifestyle</a>
               </li>
             </ul>
-            <a href="#0#">
+            <a href="#0">
               <h3 class="title-content-item-text">Йога для начинающих в домашних условиях</h3>
             </a>
             <div class="meta">
@@ -168,7 +175,7 @@
                 <a class="content-menu-link" href="#0">Music</a>
               </li>
             </ul>
-            <a href="#0#">
+            <a href="#0">
               <h3 class="title-content-item-text">Лучшие музыкальные фестивали этого лета</h3>
             </a>
             <div class="meta">
@@ -193,7 +200,7 @@
                 <a class="content-menu-link" href="#0">Food</a>
               </li>
             </ul>
-            <a href="#0#">
+            <a href="#0">
               <h3 class="title-content-item-text">Наукоёмкий подход к кулинарии</h3>
             </a>
             <div class="meta">
@@ -220,7 +227,7 @@
                 <a class="content-menu-link" href="#0">Art</a>
               </li>
             </ul>
-            <a href="#0#">
+            <a href="#0">
               <h3 class="title-content-item-text">Делаем модные принты на подушках для интерьера</h3>
             </a>
             <div class="meta">
@@ -294,7 +301,7 @@
             </div>
           </article>
           <form class="search">
-            <label>
+            <label class="label">
               <span class="visually-hidden">Поле поиска</span>
               <input type="search" class="search-field" placeholder="Найти...">
             </label>
@@ -306,7 +313,7 @@
         <section class="mailing">
           <h2 class="posts-title">Рассылка</h2>
           <form class="subscription">
-            <label>
+            <label class="label">
               <span class="visually-hidden">E-mail</span>
               <input type="email" class="email-field" placeholder="Ваш email-адрес">
             </label>
@@ -370,6 +377,7 @@
           </ul>
         </section>
       </aside>
+
     </div>
 
     <section class="shop container">
@@ -377,7 +385,12 @@
       <div class="cards">
         <div class="card">
           <div class="card-image">
-            <img src="images/shop-item-desk1.jpg" alt="Подушка" class="card-image-item">
+            <picture class="card-image-item">
+              <source media="(min-width: 1200px)" srcset="images/shop-item-desk1.jpg">
+              <source media="(min-width: 641px)" srcset="images/shop-item-tablet1.jpg">
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+              <img src="images/shop-item-desk1.jpg" alt="Подушка">
+            </picture>
           </div>
           <div class="card-content">
             <h3 class="title-card-content">Подушки на диван</h3>
@@ -394,7 +407,12 @@
         </div>
         <div class="card">
           <div class="card-image">
-            <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик" class="card-image-item">
+            <picture class="card-image-item">
+              <source media="(min-width: 1200px)" srcset="images/shop-item-desk2.jpg">
+              <source media="(min-width: 641px)" srcset="images/shop-item-tablet2.jpg">
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+              <img src="images/shop-item-desk2.jpg" alt="Кукла Зайчик">
+            </picture>
           </div>
           <div class="card-content">
             <h3 class="title-card-content">Кукла "Зайчик"</h3>
@@ -402,8 +420,8 @@
                 href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
             <div class="product-footer">
               <div class="product-prices">
-                <span class="product-price product-old-price">1000 ₽</span>
-                <span class="product-price product-new-price">800 ₽</span>
+
+                <span class="product-price product-new-price">3500 ₽</span>
               </div>
               <button class="subscribe-button product-button" type="button">В магазин</button>
             </div>
@@ -411,7 +429,12 @@
         </div>
         <div class="card">
           <div class="card-image">
-            <img src="images/shop-item-desk3.jpg" alt="Рамка" class="card-image-item">
+            <picture class="card-image-item">
+              <source media="(min-width: 1200px)" srcset="images/shop-item-desk3.jpg">
+              <source media="(min-width: 641px)" srcset="images/shop-item-tablet3.jpg">
+              <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+              <img src="images/shop-item-desk3.jpg" alt="Рамка">
+            </picture>
           </div>
           <div class="card-content">
             <h3 class="title-card-content">Шестиугольная рамка</h3>
@@ -419,8 +442,8 @@
                 подручных средств за 30 минут?»</a></p>
             <div class="product-footer">
               <div class="product-prices">
-                <span class="product-price product-old-price">1000 ₽</span>
-                <span class="product-price product-new-price">800 ₽</span>
+                <span class="product-price product-old-price">500 ₽</span>
+                <span class="product-price product-new-price">400 ₽</span>
               </div>
               <button class="subscribe-button product-button" type="button">В магазин</button>
             </div>
@@ -478,12 +501,12 @@
             <div class="radio-button">
               <p>Вы подписаны на e-mail рассылку?</p>
               <div class="radio-group">
-                <input type="radio" class="radio" name="radio-group">
-                <span class="radio-group-text">Да</span>
+                <input type="radio" class="radio" name="radio-group" id="radio-yes">
+                <label for="radio-yes" class="radio-group-text">Да</label>
               </div>
               <div class="radio-group">
-                <input type="radio" class="radio" name="radio-group">
-                <span class="radio-group-text">Нет</span>
+                <input type="radio" class="radio" name="radio-group" id="radio-no">
+                <label for="radio-no" class="radio-group-text">Нет</label>
               </div>
             </div>
 
